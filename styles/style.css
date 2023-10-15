@@ -36,3 +36,37 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: 90vh;
+}
+
+.content__details {
+  grid-column-start: 3;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.result {
+  grid-column-start: 2 span;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 0.1fr);
+}
+
+.result__video-container {
+  grid-column-start: 12 span;
+}
+
+.result__video {
+  min-width: 100%;
+}
+
+.search-form {
+  grid-column-start: 12 span;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
