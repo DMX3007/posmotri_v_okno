@@ -1,3 +1,13 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
 *,
 *::before,
 *::after {
@@ -30,6 +40,7 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 ul,
@@ -38,35 +49,112 @@ ol {
 }
 
 .content {
-  display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 90vh;
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
 }
 
-.content__details {
-  grid-column-start: 3;
-  max-height: 90%;
-  overflow: auto;
-}
+/* Video section */
 
 .result {
-  grid-column-start: 2 span;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 0.1fr);
+  padding-top: 78px;
 }
 
 .result__video-container {
-  grid-column-start: 12 span;
+  width: 711px;
 }
 
 .result__video {
   min-width: 100%;
 }
 
+/* Search Form */
+
 .search-form {
-  grid-column-start: 12 span;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+}
+
+.search-form__label .search-form__pseudo-checkbox {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.search-form__checkbox[type='checkbox']+.search-form__pseudo-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.search-form__checkbox[type='checkbox']:checked+.search-form__pseudo-checkbox {
+  background-color: white;
+  box-shadow: 0px 0px 0px 10px black inset;
+}
+
+.search-form__checkbox[type='checkbox']:focus-visible+.search-form__pseudo-checkbox {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.search-form__submit-button {
+  background-color: black;
+  border: 1px solid black;
+  width: 194px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* List section */
+
+.content__details {
+  max-height: 408px;
+  max-width: 399px;
+}
+
+.title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+}
+
+/* Cards */
+
+.content__list-item {
+  height: 103px;
+  width: 100px;
+  ;
+}
+
+.content__video-card-title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding-bottom: 6px;
 }
