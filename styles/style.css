@@ -49,13 +49,9 @@ ol {
 }
 
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   display: flex;
   gap: 30px;
-  padding-top: 133px;
-  transform: translate(-50%, -50%);
+  padding: calc(100vh - 80%) 30px;
 }
 
 /* Video section */
@@ -116,6 +112,10 @@ ol {
 
 .search-form__textfield:active {
   border: 1px solid white;
+}
+
+.search-form__label:hover {
+  cursor: pointer;
 }
 
 .search-form__label-text:hover {
