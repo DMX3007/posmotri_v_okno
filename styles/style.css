@@ -49,9 +49,13 @@ ol {
 }
 
 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   gap: 30px;
   padding-top: 133px;
+  transform: translate(-50%, -50%);
 }
 
 /* Video section */
