@@ -51,7 +51,7 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  padding: calc(100vh - 80%) 30px;
+  padding: calc(100vh - 50%) 30px;
 }
 
 /* Video section */
