@@ -80,8 +80,8 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 13px;
-  padding-bottom: 7px;
+  padding-top: 16px;
+  padding-bottom: 13px;
   color: #FFF;
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
@@ -191,6 +191,7 @@ ol {
   font-style: normal;
   line-height: normal;
   text-align: center;
+  font-family: inherit;
   background-color: black;
 }
 
