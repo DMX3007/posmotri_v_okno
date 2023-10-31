@@ -81,7 +81,7 @@ ol {
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 16px;
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   color: #FFF;
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
@@ -98,15 +98,15 @@ ol {
 }
 
 .search-form__fieldset-title {
-  color: #FFF;
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   display: flex;
   flex-direction: column;
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
   font-size: 18px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
 }
 
 .search-form__textfield {
@@ -186,13 +186,13 @@ ol {
   min-height: 34px;
   border: 1px solid white;
   color: #FFF;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
   text-align: center;
-  font-family: inherit;
-  background-color: black;
+  background-color: transparent;
 }
 
 .button:hover {
@@ -216,17 +216,19 @@ ol {
 /* List section */
 
 .content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
   max-width: 399px;
 }
 
 .title {
-  padding-bottom: 26px;
   color: #FFF;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
-  line-height: 94%;
+  line-height: 90%;
   text-transform: uppercase;
 }
 
@@ -239,16 +241,15 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  min-width: 420px;
+  min-width: 400px;
   height: 298px;
   overflow: auto;
-  overflow-x: hidden;
 }
 
 /* Cards */
 
 .content__list-item {
-  width: 394px;
+  width: 397px;
 }
 
 .content__card-link {
@@ -282,13 +283,11 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2px;
 }
 
 .content__video-card-title {
   max-width: 200px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-bottom: 1px;
   overflow: hidden;
   color: #FFF;
   font-family: Oswald, sans-serif;
@@ -311,12 +310,19 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 103px;
+  height: 101px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
   width: 100%;
-  margin: 4px;
+}
+
+.more-button:focus-visible {
+  width: 394px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  outline: 1px solid white;
+  outline-offset: 2px;
 }
