@@ -94,13 +94,18 @@ ol {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 5px;
 }
 
 .search-form__fieldset-title {
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
   flex-direction: column;
-  margin-bottom: -4px;
   font-size: 18px;
 }
 
